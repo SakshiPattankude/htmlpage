@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Mobile Page </title>
+<link rel="stylesheet" href="themes/myTheme.css"/>
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+
+</script>  
+</head>
+<body>
+     <div data-role="page" id="page1">
+        <div data-role="header">
+           <h1> My First Page </h1>
+           <div dat-role="navbar">
+                <ul>
+                   <li><a href="#page1" data-icon="heart" data-transition="pop">Home</a></li>
+                   <li><a href="#page2" data-icon="heart" data-transition="pop">Contact</a></li>
+                </ul>
+           </div>
+        </div>
+        <div data-role="main" class="ui-content">
+           <h1>Hello World</h1>
+          
+          <button>jQuery Introduction</button>
+          <p class="test">The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+          <p>The jQuery library contains the following features:
+
+              HTML/DOM manipulation
+              CSS manipulation
+              HTML event methods
+              Effects and animations
+              AJAX
+              Utilities</p>
+          
+
+             <div data-role="collapsible">
+               <h1>Past work</h1>
+               <p>Look at my past work</p>
+             </div>
+             <div data-role="collapsible">
+               <h1>Education</h1>
+               <p>teaching myself</p>
+             </div>
+        </div>
+        <div data-role="footer">
+           <h2>&copy; sakshi 2020</h2>
+        </div>
+    </div>
+
+   
+   <div data-role="Page" id="page2">
+       <div data-role="header">
+          <h1>My Second Page</h1>
+          <div dat-role="navbar">
+                <ul>
+                   <li><a href="#page1" data-icon="heart" data-transition="pop">Home</a></li>
+                   <li><a href="#page2" data-icon="heart" data-transition="pop">Contact</a></li>
+                </ul>
+           </div>
+       </div>
+       <div data-role="main" class="ui-content">
+         <h1>Contact Me </h1>
+         <form>
+            <label for="eassy">Tell us what you think</label>
+            <textarea name="eassy" id="eassy" placeholder="Tell us how great we are!"></textarea>
+            <label for="eassy">rate us out of 10</label>
+            <input type="range"  name="rate" id="rate" min="0" max="10"/>
+            <input type="submit" name="go" id="go" value="rate my app"/>
+
+
+         </form>
+       </div>
+       <div data-role="footer">
+          <h2>&copy; sakshi 2020</h2>
+       </div>
+   </div>  
+</body>
+<html>
